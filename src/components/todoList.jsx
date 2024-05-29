@@ -19,7 +19,11 @@ export const TodoList = ({ todos }) => {
             <li key={todo.id} className='bg-gray-100 p-4 rounded-lg shadow'>
               <h3 className='font-semibold text-lg'>{todo.title}</h3>
               <p className='text-gray-600'>{todo.description}</p>
-              <Link to={`/${todo.id}`}>Edit</Link>
+              <Link
+                className='text-blue-500 hover:text-blue-700'
+                to={`/${todo.id}`}>
+                Edit
+              </Link>
             </li>
           ))}
         </ul>
